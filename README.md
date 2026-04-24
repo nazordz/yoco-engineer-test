@@ -28,17 +28,17 @@ Then open **http://localhost:3000**.
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start Next.js dev server with embedded MongoDB |
-| `pnpm build` | Production build |
-| `pnpm start` | Start production server (run `pnpm build` first) |
-| `pnpm typecheck` | TypeScript type check (no emit) |
-| `pnpm lint` | Next.js lint |
-| `pnpm test` | Run vitest test suite |
-| `pnpm test:watch` | Run vitest in watch mode |
-| `pnpm seed` | Seed the database with 100 sample recipes |
-| `pnpm reset` | Wipe database and re-seed with original 100 recipes |
+| Command           | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| `pnpm dev`        | Start Next.js dev server with embedded MongoDB      |
+| `pnpm build`      | Production build                                    |
+| `pnpm start`      | Start production server (run `pnpm build` first)    |
+| `pnpm typecheck`  | TypeScript type check (no emit)                     |
+| `pnpm lint`       | Next.js lint                                        |
+| `pnpm test`       | Run vitest test suite                               |
+| `pnpm test:watch` | Run vitest in watch mode                            |
+| `pnpm seed`       | Seed the database with 100 sample recipes           |
+| `pnpm reset`      | Wipe database and re-seed with original 100 recipes |
 
 ---
 
@@ -92,6 +92,7 @@ PORT=3001 pnpm dev
 **`pnpm install` fails to download MongoDB binary**
 
 The binary download requires internet access. If you're offline or behind a proxy:
+
 1. Try again with a direct connection
 2. Or set `MONGOMS_SKIP_MD5_CHECK=true` and retry
 
