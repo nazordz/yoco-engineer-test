@@ -65,9 +65,11 @@ _(Leave this section blank if you found no issues.)_
 
 Disclose every AI tool you used. Be specific.
 
-| Tool | Task(s) | Representative prompt | What you kept | What you changed or rejected |
-| ---- | ------- | --------------------- | ------------- | ---------------------------- |
-|      |         |                       |               |                              |
+| Tools | Task(s)                                                                 | Representative prompt                                                                                                                                                             | What you kept                                  | What you changed or rejected            |
+|-------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|-----------------------------------------|
+| Codex | Generate assigned features tasks with  codex to create the nextjs page  | Create app with these following features... and criterias... you may use these mcp tools... follow these rules... use these tech stacks without additional package  installation. | result for recipe page and new api for backend | I changed/added new apis for pagination |
+|       |                                                                         |                                                                                                                                                                                   |                                                |                                         |
+|       |                                                                         |                                                                                                                                                                                   |                                                |                                         |
 
 _Why this matters: we're evaluating your judgment in working with AI tools, not whether you used them._
 
@@ -77,9 +79,9 @@ _Why this matters: we're evaluating your judgment in working with AI tools, not 
 
 List improvements you would make if you had additional time, in priority order:
 
-1.
-2.
-3.
+1. UI design to be more looking good
+2. I'll create Dockerfile for this project and create compose.yml to run mongodb in container
+3. I'll create CI/CD with github action 
 
 ---
 
