@@ -54,3 +54,4 @@ coverage/
 # TypeScript next plugin
 next-env.d.ts
 tsconfig.tsbuildinfo
+.playwright-mcp

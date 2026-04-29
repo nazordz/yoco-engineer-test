@@ -6,14 +6,18 @@ import '@testing-library/jest-dom/vitest';
 let mongoServer: MongoMemoryServer;
 
 beforeAll(async () => {
-  mongoServer = await MongoMemoryServer.create();
+  mongoServer = await MongoMemoryServer.create({
+    instance: { ip: '127.0.0.1' },
+  });
   const uri = mongoServer.getUri();
   await mongoose.connect(uri);
 });
 
 afterAll(async () => {
   await mongoose.disconnect();
-  await mongoServer.stop();
+  if (mongoServer) {
+    await mongoServer.stop();
+  }
 });
 
 afterEach(async () => {

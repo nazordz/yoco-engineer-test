@@ -1,5 +1,5 @@
 import { connectDB } from '@/lib/db';
-import { RecipeModel } from '@/lib/schemas/recipe';
+import { RecipeModel } from '@/lib/models/recipe';
 import type { TCreateRecipeInput } from '@/lib/schemas/recipe';
 
 // Deterministic PRNG — mulberry32 with fixed seed 0xC0FFEE.

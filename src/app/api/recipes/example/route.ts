@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server';
 import { connectDB } from '@/lib/db';
-import { RecipeModel } from '@/lib/schemas/recipe';
+import { RecipeModel } from '@/lib/models/recipe';
 
 export async function GET(request: NextRequest) {
   try {

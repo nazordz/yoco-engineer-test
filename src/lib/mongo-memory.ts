@@ -10,7 +10,9 @@ export async function startMemoryMongo(): Promise<string> {
   if (global.__mongoMemoryServer__) {
     return global.__mongoMemoryServer__.getUri();
   }
-  const server = await MongoMemoryServer.create();
+  const server = await MongoMemoryServer.create({
+    instance: { ip: '127.0.0.1' },
+  });
   global.__mongoMemoryServer__ = server;
   return server.getUri();
 }

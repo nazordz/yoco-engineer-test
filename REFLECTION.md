@@ -13,13 +13,13 @@ Describe **3 architectural decisions** you made. For each, explain:
 - The trade-off you accepted
 - What you would change with more time
 
-**Decision 1: [Name your decision]**
+**Decision 1: [Pagination]**
 
-_Context:_
+_Context:_ in recipe list there's no pagination
 
-_Options considered:_
+_Options considered:_ I added pagination feature
 
-_Decision and trade-offs:_
+_Decision and trade-offs:_ All recipe will not loaded at the first time when user opened the page
 
 _With more time I'd:_
 
